@@ -1,5 +1,5 @@
 <?php
-class Login extends CI_Controller {
+class LoginControl extends CI_Controller {
 
   public function __construct()
   {
@@ -9,7 +9,7 @@ class Login extends CI_Controller {
     $this->load->library('encrypt');
     $this->load->helper('security');
     $this->load->helper('url');
-    //$this->load->model('Login');
+    $this->load->model('Login');
   }
 
 
